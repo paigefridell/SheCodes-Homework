@@ -1,60 +1,103 @@
-body {
-  font-family: arial, sans-serif;
-  background-color: #d789d7;
+.container {
+  margin: 30px auto;
+  border: 1px black;
+  width: 45%;
+  display: block;
 }
 
-h1 {
-  color: #2a3d66;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-  margin: 0;
+form {
+  margin-top: 0;
+  width: 100%;
 }
 
-ul {
-  margin: 0 0 10px;
-  padding: 0;
-}
-
-li {
-  color: #5d54a4;
-  font-size: 16px;
-  font-weight: 100;
-  height: 19px;
-  line-height: 1;
-  list-style: none;
-}
-
-.weather-app {
-  border: 1px solid #9d65c9;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 600px;
-}
-
-.weather-icon {
-  height: 64px;
-  width: 64px;
+input.form-control {
+  flex: 1;
   margin-right: 10px;
 }
 
-.temperature {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 1;
+h2 {
+  margin: 15px 0;
+  color: #6c757d;
+}
+.time {
+  margin-bottom: 30px;
+  color: #6c757d;
 }
 
-.units {
-  position: relative;
-  top: -34px;
+#weather {
+  color: #6c757d;
 }
 
-.search-form {
-  margin-bottom: 20px;
+.fa-circle {
+  color: #fde168;
 }
 
-.button {
-  color: #9d65c9;
+.current-emoji {
+  padding-left: 35px;
+}
+
+.mon {
+  margin-left: 20px;
+}
+
+.wed {
+  padding-left: 10px;
+}
+
+.fa-cloud-sun {
+  padding-left: 18px;
+}
+
+.fa-cloud-showers-heavy {
+  padding-left: 13px;
+}
+
+.col-4.current-temp,
+.current-emoji {
+  font-size: 50px;
+}
+.current-temp {
+  color: black;
+}
+
+.current-info {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.row {
+  color: #6c757d;
+}
+
+.temps {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.time-of-day {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.days {
+  margin-top: 30px;
+  font-size: 20px;
+  padding-left: 4px;
+  border: 0;
+}
+
+.temp-emojis {
+  font-size: 40px;
+  padding-left: 5px;
+  margin-bottom: 15px;
+  margin-left: 13px;
+}
+
+.days,
+.high-low {
+  margin-left: 35px;
 }
