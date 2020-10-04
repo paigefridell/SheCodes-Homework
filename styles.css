@@ -59,6 +59,7 @@ h2 {
 .col-4.current-temp,
 .current-emoji {
   font-size: 75px;
+  position: fixed;
 }
 .current-temp {
   color:  #2a3d66;
