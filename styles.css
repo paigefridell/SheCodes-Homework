@@ -59,6 +59,7 @@ h2 {
 .col-4.current-temp,
 .current-emoji {
   font-size: 75px;
+  text-align: right;
 
 }
 .current-temp {
