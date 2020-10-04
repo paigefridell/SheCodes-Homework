@@ -58,7 +58,7 @@ h2 {
 
 .col-4.current-temp,
 .current-emoji {
-  font-size: 50px;
+  font-size: 75px;
 }
 .current-temp {
   color:  #2a3d66;
@@ -75,7 +75,7 @@ h2 {
 
 .temps {
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .time-of-day {
