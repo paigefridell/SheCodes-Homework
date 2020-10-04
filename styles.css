@@ -77,6 +77,8 @@ h2 {
 
 .temps {
   font-size: 30px;
+  position: fixed;
+  margin-right: 30px;
   
 }
 
