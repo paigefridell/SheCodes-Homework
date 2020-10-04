@@ -1,3 +1,7 @@
+body {
+  background-color: #d789d7;
+}
+
 .container {
   margin: 30px auto;
   border: 1px black;
@@ -21,11 +25,11 @@ h2 {
 }
 .time {
   margin-bottom: 30px;
-  color: #6c757d;
+  color: #2a3d66;
 }
 
 #weather {
-  color: #6c757d;
+  color: #2a3d66;
 }
 
 .fa-circle {
@@ -57,7 +61,7 @@ h2 {
   font-size: 50px;
 }
 .current-temp {
-  color: black;
+  color:  #2a3d66;
 }
 
 .current-info {
