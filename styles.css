@@ -5,7 +5,6 @@ body {
 
 h1 {
   color: white;
-  background: teal;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -36,9 +35,11 @@ li:first-letter {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+   
 }
 
 .weather-app {
+  background: teal;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
