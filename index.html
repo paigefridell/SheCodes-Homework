@@ -17,83 +17,86 @@
     ></script>
     <link rel="stylesheet" href="styles.css" />
     
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-9">
-              <form class="form-inline" id="enter-city">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
                 <input
-                  type="text"
-                  placeholder="Enter a city"
+                  type="search"
+                  placeholder="Type a city.."
                   class="form-control"
-                  id="search-city"
+                  id="city-input"
                   autocomplete="off"
                 />
-                <button type="submit" class="form-control">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
-            <div class="col-3">
-              <a href="#" class="scale"id="celsius">
-                C°</a> | <a href="#"" id="fahrenheit">
-                  F°</a>
-            </div>
-          </div>
-          <h2 class="card-title" id="city-display">Current Location</h2>
-          <h6 class="card-subtitle mb-2 text-muted" id="date">
-            [Today's Date]
-          </h6>
-          <h6> <span class="time" id="time">12 PM | </span> <span id="weather"></span></h6>
-          <div class="row current-info">
-            <div class="col-4 current-temp" id="current-temp"></div>
-            <div class="col-4 current-emoji"><i class="fas fa-circle"></i></div>
-            <div class="col-4">
-                <div class="current-precipitation">
-                  Precipitation:  
-                  <span id="current-precipitation">50%</span>
-                </div>
-                <div class="current-wind">
-                  Wind: 
-                  <span id="current-wind"></span>
-                </div>
-                <div class="current-humidity">
-                  Humidity: 
-                <span id="current-humidity"></span>
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
               </div>
             </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row weather-forecast" id="forecast"></div>
         </div>
-          <div class="row temps">
-            <div class="col-4">18°</div>
-          </div>
-          <hr />
-          <div class="row days">
-            <div class="col-3">Mon</div>
-            <div class="col-3">Tue</div>
-            <div class="col-3">Wed</div>
-            <div class="col-3">Thurs</div>
-          </div>
-          <div class="row temp-emojis">
-            <div class="col-3"><i class="fas mon fa-circle"></i></div>
-            <div class="col-3"><i class="fas fa-cloud-sun"></i></div>
-            <div class="col-3"><i class="fas wed fa-circle"></i></div>
-            <div class="col-3"><i class="fas fa-cloud-showers-heavy"></i></div>
-          </div>
-          <div class="row high-low">
-            <div class="col-3">26°|24°</div>
-            <div class="col-3">20°|18°</div>
-            <div class="col-3">30°|27°</div>
-            <div class="col-3">18°|16°</div>
-          </div>
-        </div>
+        <small>
+          <a
+            href="https://github.com/paigefridell/SheCodes-Homework"
+            target="_blank"
+            >Coded by</a
+          >
+          by Paige Fridell
+        </small>
       </div>
     </div>
-                  <p>
-                  <a href = "https://github.com/paigefridell/SheCodes-Homework"> coded by Paige Fridell </a>
-                  </p>
-    <script src="index.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
